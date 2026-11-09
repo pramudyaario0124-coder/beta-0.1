@@ -1,19 +1,18 @@
-# Klip Studio PWA
+# Klip Studio Beta 0.2
 
-Editor video web mobile-first dengan tampilan gelap dan workflow timeline sederhana.
+Editor video PWA mobile-first dengan workspace gelap, preview, timeline klip, panel tools, trim, split dasar, filter/warna, teks, kecepatan, dan ekspor WebM.
 
-## Isi paket
-- `index.html`: struktur aplikasi
-- `style.css`: UI mobile-first
-- `app.js`: impor klip, preview, trim in/out, speed, filter, brightness/contrast, teks overlay, dan ekspor WebM berbasis MediaRecorder
-- `manifest.json`, `sw.js`, `icon.svg`: dukungan PWA
+## Instalasi / GitHub Pages
+1. Ekstrak ZIP ini.
+2. Upload seluruh isi folder ke root repository, bukan folder pembungkus ZIP.
+3. Replace `index.html`, `style.css`, `app.js`, `manifest.json`, `sw.js`, dan `README.md`; tambahkan `icon.svg`.
+4. Aktifkan GitHub Pages dari branch `main`, folder `/ (root)`.
+5. Buka URL Pages melalui Chrome Android. Gunakan menu browser **Install app / Tambahkan ke layar utama** bila tersedia.
 
-## Upload ke GitHub Pages
-1. Ekstrak ZIP.
-2. Buka repository `editor-klip1`.
-3. Upload seluruh isi folder ini ke root repository.
-4. Pilih **Commit changes** dan pastikan file lama `index.html`, `manifest.json`, `sw.js` diganti.
-5. Buka Settings → Pages dan pastikan deploy dari branch `main`, folder `/ (root)`.
-
-## Catatan kemampuan
-Ini adalah fondasi editor PWA, bukan replika penuh CapCut. Ekspor saat ini menghasilkan WebM melalui MediaRecorder browser. Dukungan codec, performa, dan batas durasi bergantung pada browser/perangkat. Fitur multi-track, transisi, keyframe, waveform, subtitle otomatis, dan ekspor MP4 native belum tersedia.
+## Batasan beta
+- Timeline berisi beberapa klip video dalam satu urutan, belum multi-layer seperti CapCut.
+- Split adalah pemisahan klip sederhana pada posisi playhead.
+- Ekspor menggunakan MediaRecorder dan menghasilkan WebM, bukan MP4 native.
+- Musik latar belum dicampur ke hasil ekspor.
+- Proyek belum disimpan sebagai file project permanen; media tetap berada di sesi browser.
+- Performa dan dukungan codec bergantung pada perangkat dan browser. Uji dulu dengan klip pendek 720p.
